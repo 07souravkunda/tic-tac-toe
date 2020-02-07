@@ -1,0 +1,183 @@
+body{
+    background-image : url("../images/cloud-example.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+i{
+    font-size: 200px;
+    color : rgb(61, 13, 13);
+    visibility: initial;
+    position:absolute;
+    text-align: center;
+    
+   
+}
+
+.circle {
+    font-size: 150px;
+    margin-left:20px;
+}
+.close{
+    margin-top: -20px;
+    margin-left:-10px;
+}
+.wrapper  {
+    width : 800px;
+    height : 630px;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    background-color:aqua;
+    position: absolute;
+   
+ 
+}
+.game--area {
+    width : 100%;
+    height :100%;
+    background-image: url("../images/grid.png");
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat : no-repeat;
+}
+.play--area {
+    float:left;
+    width : 210px;
+    height: 170px;
+    margin-top: 45px;
+    margin-left:70px;
+    opacity: 1;
+    -webkit-transition: width 2s;
+}
+.row1{
+    margin-left: 15px;
+}
+.row2{
+    margin-top:15px;
+    height : 170px;
+}
+.line{
+    width:700px;
+    height:10px;
+    background-color : rgb(241, 107, 107);
+    position : absolute;
+    left : 50px;
+}
+.line_123{
+    top : 120px;
+}
+.line_456{
+    top : 305px;
+}
+.line_789{
+    top : 490px;
+}
+.line_147{
+    width : 10px;
+    height:600px;
+    top : 20px;
+    left : 155px;
+}
+.line_258{
+    width : 10px;
+    height:600px;
+    top : 20px;
+    left : 380px;
+}
+.line_369{
+    width : 10px;
+    height:600px;
+    top : 20px;
+    left : 607px;
+}
+.line_159{
+    transform : rotate(40deg);
+    top : 311px;
+}
+.line_357{
+    transform : rotate(320deg);
+    top : 313px;
+}
+.start--area{
+    width : 100%;
+    height : 100%;
+    position : absolute;
+    background-color : rgb(27, 27, 73);
+    
+}
+.start--area p{
+    position :absolute;
+    left: 50%;
+    transform : translateX(-50%);
+    font-size : 80px;
+}
+.winner--area{
+    width : 100%;
+    height:100%;
+    position : absolute;
+    background-color: rgb(20, 20, 19);
+    top:0px;
+    transition:transform 1s ease-in;
+}
+.winner_img{
+    width : 300px;
+    height:300px;
+    border-radius: 50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    top:200px;
+}
+.playagain_btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    top:500px;
+    font-size : 20px;
+    text-transform: uppercase;
+    text-emphasis: none;
+    background-color : rgb(20, 20, 19);
+    border : none;
+    color : rebeccapurple;
+}
+.icon{
+    right : 5px;
+    top:4px;
+    position : relative;
+    font-size : 25px;
+    color : rebeccapurple;
+}
+.winner{
+    position : absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    top : 420px;
+    color : wheat;
+    font-size: 35px;
+    text-transform:uppercase;
+}
+.playagain_btn:hover .icon{
+    right : 10px;
+    transform:translateX(-50%);
+    transition-duration: 0.3s;
+}
+.playagain_btn:hover{
+   font-weight: bold;
+   cursor: pointer;
+}
+.playagain_btn:focus{
+    outline:none;
+}
+.winner--area.visible {
+    transform:translateY(0);
+}
+
+.winner--area.invisible {
+    display:none;
+    transform:translateY(-100%);
+    width:0;
+    height:0;
+}
